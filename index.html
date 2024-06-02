@@ -62,7 +62,7 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Let´s Convert Your RC Car</div>
-                <div class="masthead-heading text-uppercase">From Vroomto Zoom</div>
+                <div class="masthead-heading text-uppercase">Vroom to Zoom</div>
                 <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
             </div>
         </header>
@@ -95,7 +95,7 @@
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-tachometer-alt fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Eletronic Speed Controler</h4>
+                        <h4 class="my-3">Eletronic Speed Controller</h4>
                         <p class="text-muted">The electronic device that regulates the motor's speed and direction.</p>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4></h4>
-                                <h4 class="subheading">Controler</h4>
+                                <h4 class="subheading">Controller</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Making a new controller for the RC car, in case its necessary.</p></div>
                         </div>
@@ -434,7 +434,7 @@
                                     <h2 class="text-uppercase">Research</h2>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/detailed/research.jpg" alt="..." />
                                     
-                                    <p>In this fase we investigated and studied the diferent options of motors, batteries and speed controlers, so we could take the best aproach and the choose the components that would better fit the car. </p>
+                                    <p>In this fase we investigated and studied the diferent options of motors, batteries and speed controllers, so we could take the best aproach and the choose the components that would better fit the car. </p>
                                     
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -523,12 +523,14 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Controler</h2>
+                                    <h2 class="text-uppercase">Controller</h2>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/detailed/comando.png" alt="..." />
                                     
-                                    <p>When we where disassembling the car and testing the original controler we discovered that the receiver was broken, so we decided to build our own controller.</p>
-                                    <p></p>
-                                    <p></p>
+                                    <p>When we where disassembling the car and testing the original controller we discovered that the receiver was broken. We decided to build a new controller and receiver, instead of trying to fix the one we had, for the purpose of enabling more customization and also learning how the control of the car works on a more fundamental level.</p>
+                                    <p>After some experiments, we found that communication using radio was the only good option we had, offering the best values in latency tests and being the only one to consistently provided the range we need.</p> 
+                                    <p>In the field of radio communication there were two main modules we found that would suit our needs, the LoRa and the NFR24L01, we had used a LoRa module for our latency tests, however we found that, in theory, the NRF24L01 can be a bit faster with the trade-off of having a little less range, which we found to be better overall for our project.</p>
+                                    <p>For the processing of inputs and outputs we used two ESP32-WROOMs, one on the car and one on the controller, the decision simply came down to what we had access two, and would find easier to work with. Most microcontrollers could probably get the job done, with more or less complex circuits, this is simply the one we chose.</p>
+                                    <p>For the inputs on our controller we are going to have two joysticks, one for acceleration and another for direction, we will also implement a switch that toggles the car between a "fast mode" and a "slow mode", where the slow mode limits the maximum power of the motor to 25% (about 18 kph) in order to be used, for example, in indoor spaces.</p>
 
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
